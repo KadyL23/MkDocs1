@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://example.com/notes/notes/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Notes - MkLorum</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MkLorum</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="https://www.scan.co.uk" class="nav-link">Scan</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Notes</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../notes2/notes2/" class="nav-link">Notes2</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../about/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../notes2/notes2/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#principles-of-data-security" class="nav-link">Principles of data security</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="principles-of-data-security">Principles of data security</h1>
+<hr />
+<p><strong>Confidentiality</strong> is the principle that information should not be disclosed or accessible to anyone who isn't authorised. Confidentiality of data is done by encryption. Operating systems have access controls that allow system users to be identified(username), authenticated (password) and authorised (file access permissions).</p>
+<p><strong>Integrity</strong> of data means that the information is accurate, complete and cannot be changed without authorisation. </p>
+<p><strong>Hashing</strong> provides a way to check the integrity of digital files. A ‘hash’ is a number produced by applying a hashing algorithm to the file. </p>
+<p><strong>Digital signatures and certificates</strong> provide assurance that a communication is from the correct person. In database systems, the normalisation process used at the design stage is used to help ensure data is not duplicated. Out of date or inaccurate information can have an impact on the integrity of a database.</p>
+<p><strong>Non-repudiation</strong> is assuring that something cannot be denied. Digital signatures can provide non-repudiation, as do operating system features such as audit logs, which show what particular user accessed a file and when. </p>
+<p><strong>Availability.</strong> An organisation must decide what level of availability it needs for its computer systems. In order to increase the availability of a system, an organisation has to remove any single point of failure from the system. ​They can achieve this through a number of methods:
+Disc redundancy – using multiple discs so that the system continues uninterrupted if one fails.​</p>
+<ul>
+<li>
+<p>Backup – to replace any data lost due, for example, to corruption or human error.</p>
+</li>
+<li>
+<p>Server redundancy – duplicated hardware in case of a serious hardware failure.​</p>
+</li>
+<li>
+<p>Disaster recovery – putting plans in place to run the whole system from a different location in the case of a physical disaster such as fire or flood.</p>
+</li>
+</ul>
+<p>Companies need to have considered what level of access can be given to specific users or groups. Ideally, each user only has access to the data that they actually require for doing their job. ​This provides minimal access to information - lowest required access permission - to maximise the protection of the data. ​Most systems allow various levels of access:</p>
+<ul>
+<li>
+<p>​Full access – ability to read, write and delete files​</p>
+</li>
+<li>
+<p>Write access – ability to read and write files but not delete them​</p>
+</li>
+<li>
+<p>Read access – ability only to view files.</p>
+</li>
+</ul>
+<p>The system should protect the data from unauthorised access or modification of information, from theft and from any type of loss. Furthermore, an organisation should know how long it can survive without its systems in the case of hardware failure or a disaster such as a fire or flood.</p>
+<p><strong>The Freedom of Information Act</strong> is a piece of legislation that grants public access to documents or other data in the possession of a government agency or public authority, unless the information falls into a category that is specifically excluded from the terms of the legislation.</p>
+<p>It is imperative that those who need access to information have it, in order to keep the data useful. Systems managers should make sure that the correct people have access to the right information and only that information. It is also important that the data is kept correct. Any incorrect data can potentially cause devastating effects. It can damage someone's reputation or cause mistakes in the system. If this happens complaints can be made and such errors can bring down a business.</p>
+<p><strong>The Data Protection Act 2018</strong> ensures that personal data is used appropriately. Only the necessary personal information should only be used with specified reasons for no longer than needed and it should always be kept up to date. Under this act the right to ask anyone about the data they hold on yourself is given.</p>
+<p><strong>The Copyright Designs and Patents Act 1988</strong> protects any artist or creators from having their original work stolen. The work has to be material, as just ideas and concepts are not protected. The law rewards artists and creators for publishing their original work. They can earn money from it and also control what happens to it like reproduction. Copyright Infringement is the act of breaking the agreements of this law. Creators can give out a “licence to use”. This allows the given company or person to use the creator's work without consequence, however sometimes for a form of compensation. If ownership is given out this is non-exclusive but if it isn’t this is exclusive. The typical copyright duration is 70 years after the last owner of the work passes.</p>
+<p><strong>The Computer Misuse Act 1990</strong> prevents people from making and/or owning anything which can be used in computer misuse offences. It keeps data safe from unauthorised editing and makes accessing computer systems and data illegal if no permission is given. If any of these things are breached fines and penalties can be given.</p>
+<p><strong>The Fraud Act 2006</strong> outlines the basis of fraud. This was put in place due to flaws in the previous act (The Theft Act 1968 and 78). It added a new offence which is now known in three ways.</p>
+<p><strong>Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000</strong> give businesses the right to monitor communications on their own networks. Previously such interception would have been unlawful unless consent had been given by both the sender and the recipient.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
