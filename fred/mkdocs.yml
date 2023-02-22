@@ -1,0 +1,9 @@
+site_name: MkLorum
+site_url: https://example.com
+nav:
+  - Home: index.md
+  - About: about.md
+  - Scan: https://www.scan.co.uk
+  - Notes: notes/notes.md
+  - Notes2: notes2/notes2.md
+  
